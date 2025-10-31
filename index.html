@@ -41,7 +41,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#inicio">
-          <img src="assets/logo.svg" alt="Coffeebin Logo" class="logo-img">
+          <p class="d-inline-flex">Coffeebin</p>
+          <img src="assets/logo.png" alt="Coffeebin Logo" class="logo-img" />
         </a>
         <button
           class="navbar-toggler"
@@ -80,401 +81,456 @@
           <a href="#" class="text-dark me-3"
             ><i class="bi bi-person fs-5"></i
           ></a>
-          <a href="#" class="text-dark"
+          <a href="#" class="text-dark d-inline-flex gap-3"
             ><i class="bi bi-cart3 fs-5"></i>
-            <span class="badge bg-dark">0</span></a
+            <span class="badge bg-dark d-inline-flex p-2 align-items-center"
+              >0</span
+            ></a
           >
         </div>
       </div>
     </nav>
 
     <main>
-    <section id="inicio">
-      <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselHero"
-            data-bs-slide-to="0"
-            class="active"
-            aria-label="Slide 1"
-            aria-current="true"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselHero"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselHero"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="hero-slide slide-capuchino">
-              <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                  <div class="col-lg-6">
-                    <div class="hero-content">
-                      <p class="hero-label">Café Premium Argentino</p>
-                      <h1 class="hero-title">
-                        Descubrí el Sabor Auténtico del Café
-                      </h1>
-                      <button class="btn-shop">Comprar Ahora</button>
+      <section id="inicio">
+        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselHero"
+              data-bs-slide-to="0"
+              class="active"
+              aria-label="Slide 1"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHero"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHero"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="hero-slide slide-capuchino">
+                <div class="container h-100">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-lg-6">
+                      <div class="hero-content">
+                        <p class="hero-label">Café Premium Argentino</p>
+                        <h1 class="hero-title">
+                          Descubrí el Sabor Auténtico del Café
+                        </h1>
+                        <button class="btn-shop">Comprar Ahora</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="hero-slide slide-cafe-negro">
+                <div class="container h-100">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-lg-6">
+                      <div class="hero-content">
+                        <p class="hero-label">Granos de Café Premium</p>
+                        <h1 class="hero-title">
+                          Experimentá la Mezcla Perfecta
+                        </h1>
+                        <button class="btn-shop">Comprar Ahora</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="hero-slide slide-pistacho">
+                <div class="container h-100">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-lg-6">
+                      <div class="hero-content">
+                        <p class="hero-label">Colección Cold Brew</p>
+                        <h1 class="hero-title">
+                          Refrescá tu Día con Cold Brew
+                        </h1>
+                        <button class="btn-shop">Comprar Ahora</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="hero-slide slide-cafe-negro">
-              <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                  <div class="col-lg-6">
-                    <div class="hero-content">
-                      <p class="hero-label">Granos de Café Premium</p>
-                      <h1 class="hero-title">Experimentá la Mezcla Perfecta</h1>
-                      <button class="btn-shop">Comprar Ahora</button>
-                    </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselHero"
+            data-bs-slide="prev"
+            aria-label="Previous slide"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselHero"
+            data-bs-slide="next"
+            aria-label="Next slide"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+
+      <aside class="brands-section py-4" aria-label="Marcas asociadas">
+        <div class="container">
+          <div class="row align-items-center justify-content-center g-4">
+            <div class="col-6 col-md-2 text-center">
+              <div class="brand-logo">Natural</div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="brand-logo brand-cursive">Ray-Ban</div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="brand-logo brand-cursive">travel</div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="brand-logo">BOSS</div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="brand-logo brand-cursive">Vintage</div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="brand-logo">Natural</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section id="sobre-nosotros" class="py-5 bg-light">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="section-title">Sobre Nosotros</h2>
+              <p class="section-subtitle">La pasión por el café perfecto</p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <article class="col-md-6 col-lg-3">
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="bi bi-cup-hot"></i>
+                </div>
+                <h3 class="info-title">Mix For Hot & Cold Brews</h3>
+                <p class="info-desc">Instant Coffee Premix Cappuccino</p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-primary mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto="Mix For Hot & Cold Brews"
+                >
+                  Ver más
+                </button>
+              </div>
+            </article>
+            <article class="col-md-6 col-lg-3">
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h3 class="info-title">Up To 20% Off</h3>
+                <p class="info-desc">Buy Coffee Whole Bean</p>
+              </div>
+            </article>
+            <article class="col-md-6 col-lg-3">
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="bi bi-star"></i>
+                </div>
+                <h3 class="info-title">Best Quality</h3>
+                <p class="info-desc">Premium Coffee Super Sale</p>
+              </div>
+            </article>
+            <article class="col-md-6 col-lg-3">
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="bi bi-heart"></i>
+                </div>
+                <h3 class="info-title">Flavoured Milk & Coffee</h3>
+                <p class="info-desc">Coffee Frappe Shake And Drink</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="productos" class="py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="section-title">Nuestros Productos</h2>
+              <div class="product-tabs">
+                <button class="tab-btn active" data-tab="nuevos">
+                  New Arrivals
+                </button>
+                <button class="tab-btn" data-tab="destacados">Featured</button>
+                <button class="tab-btn" data-tab="bestsellers">
+                  Best Sellers
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4">
+            <article class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="product-badge">-10%</span>
+                <div class="product-image">
+                  <div class="product-placeholder">
+                    <i class="bi bi-cup-straw"></i>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-name">Vanilla Latte</h4>
+                  <div class="product-price">
+                    <span class="price-old">$24.99</span>
+                    <span class="price-new">$22.49</span>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="hero-slide slide-pistacho">
-              <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                  <div class="col-lg-6">
-                    <div class="hero-content">
-                      <p class="hero-label">Colección Cold Brew</p>
-                      <h1 class="hero-title">Refrescá tu Día con Cold Brew</h1>
-                      <button class="btn-shop">Comprar Ahora</button>
-                    </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <span class="product-badge">-15%</span>
+                <div class="product-image">
+                  <div class="product-placeholder">
+                    <i class="bi bi-bag"></i>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-name">Teamonk Chamomile</h4>
+                  <div class="product-price">
+                    <span class="price-old">$29.99</span>
+                    <span class="price-new">$25.49</span>
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <div class="product-placeholder">
+                    <i class="bi bi-cup"></i>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-name">Chocolate Frappe</h4>
+                  <div class="product-price">
+                    <span class="price-new">$19.99</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <div class="product-placeholder">
+                    <i class="bi bi-box-seam"></i>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h4 class="product-name">Coffee Beans 1000g</h4>
+                  <div class="product-price">
+                    <span class="price-new">$34.99</span>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselHero"
-          data-bs-slide="prev"
-          aria-label="Previous slide"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselHero"
-          data-bs-slide="next"
-          aria-label="Next slide"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-      </div>
-    </section>
+      </section>
 
-    <aside class="brands-section py-4" aria-label="Marcas asociadas">
-      <div class="container">
-        <div class="row align-items-center justify-content-center g-4">
-          <div class="col-6 col-md-2 text-center">
-            <div class="brand-logo">Natural</div>
+      <section id="video" class="py-5 bg-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="section-title">El Arte del Café</h2>
+              <p class="section-subtitle">Descubre nuestro proceso</p>
+            </div>
           </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="brand-logo brand-cursive">Ray-Ban</div>
+          <div class="row">
+            <div class="col-12 col-lg-8 mx-auto">
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe
+                  src="https://www.youtube.com/embed/lYF1FliEYxU"
+                  title="Video sobre café"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
           </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="brand-logo brand-cursive">travel</div>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="brand-logo">BOSS</div>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="brand-logo brand-cursive">Vintage</div>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="brand-logo">Natural</div>
+          <div class="row g-4">
+            <article class="col-md-4">
+              <div class="text-content">
+                <h3 class="content-title">Origen Selecto</h3>
+                <p>
+                  Trabajamos directamente con productores de café de alta
+                  calidad en diferentes regiones del mundo, seleccionando granos
+                  excepcionales que cumplen con nuestros estándares de
+                  excelencia.
+                </p>
+              </div>
+            </article>
+            <article class="col-md-4">
+              <div class="text-content">
+                <h3 class="content-title">Tostado Artesanal</h3>
+                <p>
+                  Nuestro proceso de tostado artesanal resalta las
+                  características únicas de cada variedad, creando perfiles de
+                  sabor equilibrados y complejos que deleitan el paladar.
+                </p>
+              </div>
+            </article>
+            <article class="col-md-4">
+              <div class="text-content">
+                <h3 class="content-title">Frescura Garantizada</h3>
+                <p>
+                  Garantizamos la frescura de nuestros productos mediante un
+                  sistema de distribución eficiente, entregando café recién
+                  tostado directamente a tu hogar o negocio.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </aside>
+      </section>
 
-    <section id="sobre-nosotros" class="py-5 bg-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title">Sobre Nosotros</h2>
-            <p class="section-subtitle">La pasión por el café perfecto</p>
-          </div>
-        </div>
-        <div class="row g-4">
-          <article class="col-md-6 col-lg-3">
-            <div class="info-card">
-              <div class="info-icon">
-                <i class="bi bi-cup-hot"></i>
-              </div>
-              <h3 class="info-title">Mix For Hot & Cold Brews</h3>
-              <p class="info-desc">Instant Coffee Premix Cappuccino</p>
-              <button type="button" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#productoModal" data-producto="Mix For Hot & Cold Brews">
-                Ver más
-              </button>
-            </div>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <div class="info-card">
-              <div class="info-icon">
-                <i class="bi bi-award"></i>
-              </div>
-              <h3 class="info-title">Up To 20% Off</h3>
-              <p class="info-desc">Buy Coffee Whole Bean</p>
-            </div>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <div class="info-card">
-              <div class="info-icon">
-                <i class="bi bi-star"></i>
-              </div>
-              <h3 class="info-title">Best Quality</h3>
-              <p class="info-desc">Premium Coffee Super Sale</p>
-            </div>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <div class="info-card">
-              <div class="info-icon">
-                <i class="bi bi-heart"></i>
-              </div>
-              <h3 class="info-title">Flavoured Milk & Coffee</h3>
-              <p class="info-desc">Coffee Frappe Shake And Drink</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="productos" class="py-5">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12 text-center">
-            <h2 class="section-title">Nuestros Productos</h2>
-            <div class="product-tabs">
-              <button class="tab-btn active" data-tab="nuevos">
-                New Arrivals
-              </button>
-              <button class="tab-btn" data-tab="destacados">Featured</button>
-              <button class="tab-btn" data-tab="bestsellers">
-                Best Sellers
-              </button>
+      <section id="contacto" class="py-5">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="section-title">Contáctanos</h2>
+              <p class="section-subtitle">Estamos aquí para ayudarte</p>
             </div>
           </div>
-        </div>
-        <div class="row g-4">
-          <article class="col-6 col-md-4 col-lg-3">
-            <div class="product-card">
-              <span class="product-badge">-10%</span>
-              <div class="product-image">
-                <div class="product-placeholder">
-                  <i class="bi bi-cup-straw"></i>
+          <div class="row">
+            <div class="col-12 col-lg-8 mx-auto">
+              <form id="contactForm" class="contact-form">
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="apellido"
+                      required
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-name">Vanilla Latte</h4>
-                <div class="product-price">
-                  <span class="price-old">$24.99</span>
-                  <span class="price-new">$22.49</span>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-6 col-md-4 col-lg-3">
-            <div class="product-card">
-              <span class="product-badge">-15%</span>
-              <div class="product-image">
-                <div class="product-placeholder">
-                  <i class="bi bi-bag"></i>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-name">Teamonk Chamomile</h4>
-                <div class="product-price">
-                  <span class="price-old">$29.99</span>
-                  <span class="price-new">$25.49</span>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-6 col-md-4 col-lg-3">
-            <div class="product-card">
-              <div class="product-image">
-                <div class="product-placeholder">
-                  <i class="bi bi-cup"></i>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-name">Chocolate Frappe</h4>
-                <div class="product-price">
-                  <span class="price-new">$19.99</span>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-6 col-md-4 col-lg-3">
-            <div class="product-card">
-              <div class="product-image">
-                <div class="product-placeholder">
-                  <i class="bi bi-box-seam"></i>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="product-name">Coffee Beans 1000g</h4>
-                <div class="product-price">
-                  <span class="price-new">$34.99</span>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="video" class="py-5 bg-light">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12 text-center">
-            <h2 class="section-title">El Arte del Café</h2>
-            <p class="section-subtitle">Descubre nuestro proceso</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-lg-8 mx-auto">
-            <div class="ratio ratio-16x9 mb-4">
-              <iframe
-                src="https://www.youtube.com/embed/lYF1FliEYxU"
-                title="Video sobre café"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="row g-4">
-          <article class="col-md-4">
-            <div class="text-content">
-              <h3 class="content-title">Origen Selecto</h3>
-              <p>
-                Trabajamos directamente con productores de café de alta calidad
-                en diferentes regiones del mundo, seleccionando granos
-                excepcionales que cumplen con nuestros estándares de excelencia.
-              </p>
-            </div>
-          </article>
-          <article class="col-md-4">
-            <div class="text-content">
-              <h3 class="content-title">Tostado Artesanal</h3>
-              <p>
-                Nuestro proceso de tostado artesanal resalta las características
-                únicas de cada variedad, creando perfiles de sabor equilibrados
-                y complejos que deleitan el paladar.
-              </p>
-            </div>
-          </article>
-          <article class="col-md-4">
-            <div class="text-content">
-              <h3 class="content-title">Frescura Garantizada</h3>
-              <p>
-                Garantizamos la frescura de nuestros productos mediante un
-                sistema de distribución eficiente, entregando café recién
-                tostado directamente a tu hogar o negocio.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto" class="py-5">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title">Contáctanos</h2>
-            <p class="section-subtitle">Estamos aquí para ayudarte</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-lg-8 mx-auto">
-            <form id="contactForm" class="contact-form">
-              <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                  <label for="nombre" class="form-label">Nombre</label>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
-                    id="nombre"
+                    id="email"
                     required
                   />
                 </div>
-                <div class="col-md-6">
-                  <label for="apellido" class="form-label">Apellido</label>
-                  <input
-                    type="text"
+                <div class="mb-4">
+                  <label for="comentario" class="form-label">Comentario</label>
+                  <textarea
                     class="form-control"
-                    id="apellido"
+                    id="comentario"
+                    rows="5"
                     required
-                  />
+                  ></textarea>
                 </div>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required />
-              </div>
-              <div class="mb-4">
-                <label for="comentario" class="form-label">Comentario</label>
-                <textarea
-                  class="form-control"
-                  id="comentario"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn-shop">Enviar Mensaje</button>
-              </div>
-            </form>
+                <div class="text-center">
+                  <button type="submit" class="btn-shop">Enviar Mensaje</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="modal fade" id="productoModal" tabindex="-1" aria-labelledby="productoModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="productoModalLabel">Detalle del Producto</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Nuestro café instantáneo premix cappuccino ofrece la perfecta mezcla para preparaciones calientes y frías. Ideal para cualquier momento del día con un sabor intenso y cremoso.</p>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-check-circle text-success me-2"></i>Calidad premium garantizada</li>
-              <li><i class="bi bi-check-circle text-success me-2"></i>Ingredientes 100% naturales</li>
-              <li><i class="bi bi-check-circle text-success me-2"></i>Envasado al vacío para máxima frescura</li>
-              <li><i class="bi bi-check-circle text-success me-2"></i>Disponible en diferentes tamaños</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Agregar al carrito</button>
+      <div
+        class="modal fade"
+        id="productoModal"
+        tabindex="-1"
+        aria-labelledby="productoModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productoModalLabel">
+                Detalle del Producto
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Nuestro café instantáneo premix cappuccino ofrece la perfecta
+                mezcla para preparaciones calientes y frías. Ideal para
+                cualquier momento del día con un sabor intenso y cremoso.
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i>Calidad
+                  premium garantizada
+                </li>
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i
+                  >Ingredientes 100% naturales
+                </li>
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i>Envasado
+                  al vacío para máxima frescura
+                </li>
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i>Disponible
+                  en diferentes tamaños
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-primary">
+                Agregar al carrito
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </main>
 
     <footer class="footer">
