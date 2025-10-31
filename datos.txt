@@ -1,0 +1,23 @@
+DATOS DEL PROYECTO
+
+Nombre y Apellido: Guillen David y Gael Nunez
+
+
+Carrera: [25-2][DWN2AP] Interacción con Dispositivos Móviles
+Turno: [Noche]
+Año: 2025
+
+Descripción del proyecto:
+One Page responsive para una cafetería utilizando Bootstrap 5.
+Incluye navbar, carousel, cards, accordion, formulario de contacto y secciones navegables.
+Diseño minimalista con colores café/beige.
+CSS externo y JavaScript separado en app.js.
+
+Tecnologías utilizadas:
+- HTML5
+- CSS3
+- Bootstrap 5.3.2
+- JavaScript ES6
+- Google Fonts (Playfair Display + Inter)
+- Bootstrap Icons
+
