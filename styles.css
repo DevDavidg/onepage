@@ -129,6 +129,31 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+.text-coffee {
+  color: var(--primary-color);
+}
+
+.btn-outline-coffee {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-coffee:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.btn-coffee {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-coffee:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
+
 .transition-hover {
   transition: transform 0.3s ease;
 }
