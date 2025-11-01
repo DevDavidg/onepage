@@ -19,18 +19,16 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="top-bar">
+    <header class="top-bar text-white py-2">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <div class="top-bar-text">
+          <div class="small">
             Envío gratis en todo el país por compras mayores a $50.000
             <a href="#" class="text-white fw-bold ms-2">COMPRAR AHORA</a>
           </div>
-          <div class="top-bar-links">
-            <a href="#"
-              ><i class="bi bi-envelope me-1"></i> info@coffeebin.com.ar</a
-            >
-            <a href="#"><i class="bi bi-telephone me-1"></i> 117003947</a>
+          <div class="d-flex gap-4 small">
+            <a href="#" class="text-white text-decoration-none"><i class="bi bi-envelope me-1"></i> info@coffeebin.com.ar</a>
+            <a href="#" class="text-white text-decoration-none"><i class="bi bi-telephone me-1"></i> 117003947</a>
             <span>Español</span>
             <span>ARS</span>
           </div>
@@ -40,8 +38,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#inicio">
-          <p class="d-inline-flex">Coffeebin</p>
+        <a class="navbar-brand d-flex align-items-center justify-content-center gap-2" href="#inicio">
+          <p class="m-0">Coffeebin</p>
           <img src="assets/logo.png" alt="Coffeebin Logo" class="logo-img" />
         </a>
         <button
@@ -60,21 +58,11 @@
           id="navbarNav"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#inicio">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#productos">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#video">Video</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
+            <li class="nav-item"><a class="nav-link px-4" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link px-4" href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link px-4" href="#productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link px-4" href="#video">Video</a></li>
+            <li class="nav-item"><a class="nav-link px-4" href="#contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="d-none d-lg-flex align-items-center">
@@ -190,27 +178,15 @@
         </div>
       </section>
 
-      <aside class="brands-section py-4" aria-label="Marcas asociadas">
+      <aside class="bg-white border-top border-bottom py-4" aria-label="Marcas asociadas">
         <div class="container">
           <div class="row align-items-center justify-content-center g-4">
-            <div class="col-6 col-md-2 text-center">
-              <div class="brand-logo">Natural</div>
-            </div>
-            <div class="col-6 col-md-2 text-center">
-              <div class="brand-logo brand-cursive">Ray-Ban</div>
-            </div>
-            <div class="col-6 col-md-2 text-center">
-              <div class="brand-logo brand-cursive">travel</div>
-            </div>
-            <div class="col-6 col-md-2 text-center">
-              <div class="brand-logo">BOSS</div>
-            </div>
-            <div class="col-6 col-md-2 text-center">
-              <div class="brand-logo brand-cursive">Vintage</div>
-            </div>
-            <div class="col-6 col-md-2 text-center">
-              <div class="brand-logo">Natural</div>
-            </div>
+            <div class="col-6 col-md-2 text-center"><div class="brand-logo fw-bold text-uppercase small text-muted opacity-75">Natural</div></div>
+            <div class="col-6 col-md-2 text-center"><div class="brand-logo fw-bold fst-italic small text-muted opacity-75">Ray-Ban</div></div>
+            <div class="col-6 col-md-2 text-center"><div class="brand-logo fw-bold fst-italic small text-muted opacity-75">travel</div></div>
+            <div class="col-6 col-md-2 text-center"><div class="brand-logo fw-bold text-uppercase small text-muted opacity-75">BOSS</div></div>
+            <div class="col-6 col-md-2 text-center"><div class="brand-logo fw-bold fst-italic small text-muted opacity-75">Vintage</div></div>
+            <div class="col-6 col-md-2 text-center"><div class="brand-logo fw-bold text-uppercase small text-muted opacity-75">Natural</div></div>
           </div>
         </div>
       </aside>
@@ -219,54 +195,38 @@
         <div class="container">
           <div class="row mb-5">
             <div class="col-12 text-center">
-              <h2 class="section-title">Sobre Nosotros</h2>
-              <p class="section-subtitle">La pasión por el café perfecto</p>
+              <h2 class="section-title ff-serif fw-bold display-4 mb-2">Sobre Nosotros</h2>
+              <p class="text-muted">La pasión por el café perfecto</p>
             </div>
           </div>
           <div class="row g-4">
             <article class="col-md-6 col-lg-3">
-              <div class="info-card">
-                <div class="info-icon">
-                  <i class="bi bi-cup-hot"></i>
-                </div>
-                <h3 class="info-title">Mix For Hot & Cold Brews</h3>
-                <p class="info-desc">Instant Coffee Premix Cappuccino</p>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-outline-primary mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productoModal"
-                  data-producto="Mix For Hot & Cold Brews"
-                >
-                  Ver más
-                </button>
+              <div class="info-card card border h-100 text-center p-4 transition-hover">
+                <div class="display-4 text-primary mb-3"><i class="bi bi-cup-hot"></i></div>
+                <h3 class="card-title h6 fw-semibold mb-2">Mix For Hot & Cold Brews</h3>
+                <p class="card-text small text-muted mb-0">Instant Coffee Premix Cappuccino</p>
+                <button type="button" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#productoModal" data-producto="Mix For Hot & Cold Brews">Ver más</button>
               </div>
             </article>
             <article class="col-md-6 col-lg-3">
-              <div class="info-card">
-                <div class="info-icon">
-                  <i class="bi bi-award"></i>
-                </div>
-                <h3 class="info-title">Up To 20% Off</h3>
-                <p class="info-desc">Buy Coffee Whole Bean</p>
+              <div class="info-card card border h-100 text-center p-4 transition-hover">
+                <div class="display-4 text-primary mb-3"><i class="bi bi-award"></i></div>
+                <h3 class="card-title h6 fw-semibold mb-2">Up To 20% Off</h3>
+                <p class="card-text small text-muted mb-0">Buy Coffee Whole Bean</p>
               </div>
             </article>
             <article class="col-md-6 col-lg-3">
-              <div class="info-card">
-                <div class="info-icon">
-                  <i class="bi bi-star"></i>
-                </div>
-                <h3 class="info-title">Best Quality</h3>
-                <p class="info-desc">Premium Coffee Super Sale</p>
+              <div class="info-card card border h-100 text-center p-4 transition-hover">
+                <div class="display-4 text-primary mb-3"><i class="bi bi-star"></i></div>
+                <h3 class="card-title h6 fw-semibold mb-2">Best Quality</h3>
+                <p class="card-text small text-muted mb-0">Premium Coffee Super Sale</p>
               </div>
             </article>
             <article class="col-md-6 col-lg-3">
-              <div class="info-card">
-                <div class="info-icon">
-                  <i class="bi bi-heart"></i>
-                </div>
-                <h3 class="info-title">Flavoured Milk & Coffee</h3>
-                <p class="info-desc">Coffee Frappe Shake And Drink</p>
+              <div class="info-card card border h-100 text-center p-4 transition-hover">
+                <div class="display-4 text-primary mb-3"><i class="bi bi-heart"></i></div>
+                <h3 class="card-title h6 fw-semibold mb-2">Flavoured Milk & Coffee</h3>
+                <p class="card-text small text-muted mb-0">Coffee Frappe Shake And Drink</p>
               </div>
             </article>
           </div>
@@ -277,7 +237,7 @@
         <div class="container">
           <div class="row mb-4">
             <div class="col-12 text-center">
-              <h2 class="section-title">Nuestros Productos</h2>
+              <h2 class="section-title ff-serif fw-bold display-4 mb-4">Nuestros Productos</h2>
               <div class="product-tabs">
                 <button class="tab-btn active" data-tab="nuevos">
                   New Arrivals
@@ -362,8 +322,8 @@
         <div class="container">
           <div class="row mb-4">
             <div class="col-12 text-center">
-              <h2 class="section-title">El Arte del Café</h2>
-              <p class="section-subtitle">Descubre nuestro proceso</p>
+              <h2 class="section-title ff-serif fw-bold display-4 mb-2">El Arte del Café</h2>
+              <p class="text-muted">Descubre nuestro proceso</p>
             </div>
           </div>
           <div class="row">
@@ -417,8 +377,8 @@
         <div class="container">
           <div class="row mb-5">
             <div class="col-12 text-center">
-              <h2 class="section-title">Contáctanos</h2>
-              <p class="section-subtitle">Estamos aquí para ayudarte</p>
+              <h2 class="section-title ff-serif fw-bold display-4 mb-2">Contáctanos</h2>
+              <p class="text-muted">Estamos aquí para ayudarte</p>
             </div>
           </div>
           <div class="row">
